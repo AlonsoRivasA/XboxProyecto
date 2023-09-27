@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tabla de desarrolladores</title>
+    <link rel="shortcut icon" href="img/icono.ico" />
+    <style>
+        .captura {
+            position: absolute;
+            top: 60px;
+            /* Ajusta la altura para que comience debajo de la barra de navegación */
+            left: 0;
+            width: 100%;
+            height: calc(100% - 60px);
+            /* Ajusta la altura para ocupar el espacio restante */
+            background-image: url('img/capDesarrollador.png');
+            background-size: cover;
+            background-position: center;
+            z-index: -1;
+        }
+
+        /* Estilos para el contenido del header */
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: auto;
+            position: relative;
+            /* Añade position: relative; para crear un contexto de apilamiento para el contenido */
+            z-index: 1;
+            /* Asegura que el contenido del header esté por encima del div captura */
+        }
+
+        .footer {
+            background-color: #f2f2f2;
+            color: #616161;
+            font-size: 12px;
+            padding: 20px 0;
+        }
+
+        .footer-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .footer ul {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .footer li {
+            margin-right: 20px;
+            margin-bottom: 10px;
+        }
+
+        .footer div {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+
+        .footer {
+            background-color: #f2f2f2;
+            color: #616161;
+            font-size: 12px;
+            padding: 20px 0;
+            position: absolute;
+            /* Añade position: relative; para crear un contexto de apilamiento para el footer */
+            z-index: 1;
+            /* Asegura que el footer esté por encima del div captura */
+            bottom: 0;
+            width: 100%;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #fff;
+            color: #000;
+            font-size: 15px;
+            line-height: 1.5;
+        }
+
+        a {
+            color: #262626;
+            text-decoration: none;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .dark {
+            color: #fff;
+        }
+
+        .dark .btn {
+            background-color: #f4f4f4;
+            color: #333;
+            text-decoration-color: #f4f4f4;
+        }
+
+        .dark .btn:hover {
+            text-decoration-color: #333;
+            opacity: 0.95;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: auto;
+            position: relative;
+            /* Añade position: relative; para crear un contexto de apilamiento para el contenido */
+            top: 0;
+        }
+
+        .main-nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 60px;
+            padding: 20px 0;
+            font-size: 13px;
+        }
+
+        .main-nav .logo {
+            width: 110px;
+        }
+
+        .main-nav ul {
+            display: flex;
+        }
+
+        .main-nav ul li {
+            padding: 0 10px;
+        }
+
+        .main-nav ul li a {
+            padding-bottom: 2px;
+            border-bottom: 2px solid #fff;
+            transition: border 0.2s;
+        }
+
+        .main-nav ul li a:hover {
+            border-bottom: 2px solid #262626;
+        }
+
+        .main-nav ul.main-menu {
+            flex: 1;
+            margin-left: 20px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="captura"></div>
+
+    <div class="container">
+        <nav class="main-nav">
+            <a href="index.html">
+                <img src="img/logo.png" alt="Microsoft" class="logo" />
+            </a>
+            <ul class="main-menu">
+                <li>Para Administradores:</li>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="formularioUs.html">Usuarios</a></li>
+                <li><a href="formularioJueg.html">Juegos</a></li>
+                <li><a href="formularioCmt.html">Comentarios</a></li>
+                <li><a href="formularioDes.html">Desarrolladores</a></li>
+                <li><a href="formularioVent.html">Ventas</a></li>
+                <li><a href="selector.html">Base de Datos</a></li>
+            </ul>
+        </nav>
+
+
+
+    </div>
+
+    <footer class="footer">
+        <div class="footer-inner">
+            <div><i class="fa-solid fa-globe"></i><span>Español (MX)</span></div>
+            <ul>
+                <li><a href="#">Luis Alonso Rivas Andrade 5-I</a></li>
+                <li><a href="#">&copy; Microsoft 2023</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>
